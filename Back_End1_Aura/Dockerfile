@@ -9,7 +9,7 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
 # Copy the project file and restore dependencies
-COPY ["Back_End1_Aura/Back_End1_Aura.csproj", "Back_End1_Aura/"]
+#COPY ["Back_End1_Aura/Back_End1_Aura.csproj", "Back_End1_Aura/"]
 RUN dotnet restore "Back_End1_Aura/Back_End1_Aura.csproj"
 
 # Copy the remaining source code
