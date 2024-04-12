@@ -6,11 +6,11 @@ EXPOSE 8081
 
 # Use the ASP.NET Core SDK image for building the application
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-WORKDIR /src
+#WORKDIR /src
 
 # Copy the project file and restore dependencies
-COPY ["Back_End1/Back_End1_Aura/Back_End1_Aura.csproj", "Back_End1_Aura/"]
-RUN dotnet restore "Back_End1_Aura/Back_End1_Aura.csproj"
+COPY ["Back_End1_Aura/", "/src/Back_End1_Aura/"]
+RUN dotnet restore "/src/Back_End1_Aura/Back_End1_Aura.csproj"
 
 # Copy the remaining source code
 COPY . .
