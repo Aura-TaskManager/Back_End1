@@ -1,24 +1,9 @@
 ﻿version: '3.8'
 
 services:
-  web:
-    image: nginx:latest
-    ports:
-      - "8080:80"
-    networks:
-      - frontend
-  db:
-    image: mysql:latest
-    environment:
-      MYSQL_ROOT_PASSWORD: example
-    networks:
-      - backend
-    volumes:
-      - db-data:/var/lib/mysql
-
-networks:
-  frontend:
   backend:
-
-volumes:
-  db-data:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: production
