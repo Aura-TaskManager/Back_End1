@@ -66,7 +66,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: ./Back_End1_Aura  # Adjusted context to include the directory
-          dockerfile: Back_End1_Aura/Dockerfile  # Specify the path to the Dockerfile
+          dockerfile: Dockerfile  # Assuming Dockerfile is in the root of Back_End1_Aura directory
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
