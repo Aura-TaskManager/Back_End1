@@ -65,8 +65,8 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v2
         with:
-          context: .
+          context: ./Back_End1_Aura  # Adjusted context to include the directory
+          dockerfile: Back_End1_Aura/Dockerfile  # Specify the path to the Dockerfile
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-
