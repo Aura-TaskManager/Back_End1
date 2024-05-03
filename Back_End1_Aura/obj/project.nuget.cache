@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "j8+FkCAf0Hx+QpX7eOZ+sEYDJxXYVwzDmUsMxeOCV11iRPAagbGrl+NK3oE82MeblQgizU82de+qAXlX766cMA==",
+  "dgSpecHash": "/xf4NchOuZ80/vpChSDA0egDGC0jaO3RAsP7SEkn6uD94JqXTKBolvI5DpvoImE89nymD9Vcmz3f1v4J+fUo8g==",
   "success": true,
   "projectFilePath": "C:\\Users\\raozg\\RiderProjects\\Back_End1_Aura\\Back_End1_Aura\\Back_End1_Aura.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\raozg\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\raozg\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\raozg\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
-    "C:\\Users\\raozg\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.0\\microsoft.aspnetcore.openapi.8.0.0.nupkg.sha512",
+    "C:\\Users\\raozg\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.4\\microsoft.aspnetcore.openapi.8.0.4.nupkg.sha512",
     "C:\\Users\\raozg\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\raozg\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",
     "C:\\Users\\raozg\\.nuget\\packages\\microsoft.codeanalysis.common\\4.5.0\\microsoft.codeanalysis.common.4.5.0.nupkg.sha512",
