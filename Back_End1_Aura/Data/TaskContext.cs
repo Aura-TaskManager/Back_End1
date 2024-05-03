@@ -9,7 +9,8 @@ namespace Back_End1_Aura.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=mssqlstud.fhict.local;Database=dbi502633_aura;User Id=dbi502633_aura;Password=aura123;TrustServerCertificate=True");
+            string connectionString = Environment.GetEnvironmentVariable("CONNECTION_STRING");
+            optionsBuilder.UseSqlServer(connectionString);
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
