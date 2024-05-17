@@ -33,4 +33,12 @@
       <Folder Include="Migrations\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Compile Remove="Migrations\20240503122054_Initial.cs" />
+      <Compile Remove="Migrations\20240503122054_Initial.Designer.cs" />
+      <Compile Remove="Migrations\20240516115144_AddCategoryToTask.cs" />
+      <Compile Remove="Migrations\20240516115144_AddCategoryToTask.Designer.cs" />
+      <Compile Remove="Migrations\TaskContextModelSnapshot.cs" />
+    </ItemGroup>
+
 </Project>
