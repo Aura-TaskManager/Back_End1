@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Back_End1_Aura.Controllers
 {
     [ApiController]
-    [Route("[Controller]")]
+    [Route("[controller]")]
     public class TaskController : ControllerBase
     {
         private readonly TaskService _taskService;
@@ -15,7 +15,7 @@ namespace Back_End1_Aura.Controllers
         [HttpGet("{name}")]
         public TaskViewModel GetByName(string name) => _taskService.GetByName(name);
 
-        [HttpGet]
+        [HttpGet ("GetAll")]
         public IEnumerable<TaskViewModel> GetAll() => _taskService.GetAll();
     }
 }

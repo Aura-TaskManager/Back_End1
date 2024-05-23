@@ -1,14 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Back_End1_Aura.Models; 
+using Back_End1_Aura.Models;
 
 namespace Back_End1_Aura.Data
 {
     public class TaskDbContext : DbContext
     {
-        public TaskDbContext(DbContextOptions<TaskDbContext> options) : base(options)
-        {
-            
-        }
+        public TaskDbContext(DbContextOptions<TaskDbContext> options) : base(options) { }
+
         public DbSet<TaskModel> Tasks { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -24,6 +22,7 @@ namespace Back_End1_Aura.Data
         }
     }
 }
+
 
 //migration updaten met: dotnet ef database update --project Back_End1_Aura/Back_End1_Aura.csproj
 //migration maken met: dotnet ef migrations add InitialCreate

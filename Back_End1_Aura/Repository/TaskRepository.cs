@@ -8,7 +8,7 @@ namespace Back_End1_Aura.Repository
     {
         private readonly TaskDbContext _context;
 
-        public TaskRepository(TaskDbContext context) // Change DbContext to AppDbContext
+        public TaskRepository(TaskDbContext context) // database conn
         {
             _context = context;
         }
