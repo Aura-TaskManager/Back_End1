@@ -1,10 +1,12 @@
 name: SonarCloud
+
 on:
   push:
     branches:
       - master
   pull_request:
     types: [opened, synchronize, reopened]
+
 jobs:
   build:
     name: Build and analyze
@@ -15,35 +17,54 @@ jobs:
         with:
           java-version: 17
           distribution: 'zulu' # Alternative distribution options are available.
-      - uses: actions/checkout@v3
+
+      - name: Checkout repository
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
+
       - name: Cache SonarCloud packages
         uses: actions/cache@v3
         with:
-          path: ~\sonar\cache
+          path: ~/.sonar/cache
           key: ${{ runner.os }}-sonar
           restore-keys: ${{ runner.os }}-sonar
+
       - name: Cache SonarCloud scanner
         id: cache-sonar-scanner
         uses: actions/cache@v3
         with:
-          path: .\.sonar\scanner
+          path: ./.sonar/scanner
           key: ${{ runner.os }}-sonar-scanner
           restore-keys: ${{ runner.os }}-sonar-scanner
+
       - name: Install SonarCloud scanner
         if: steps.cache-sonar-scanner.outputs.cache-hit != 'true'
-        shell: powershell
+        shell: pwsh
         run: |
-          New-Item -Path .\.sonar\scanner -ItemType Directory
-          dotnet tool update dotnet-sonarscanner --tool-path .\.sonar\scanner
+          New-Item -Path ./.sonar/scanner -ItemType Directory
+          dotnet tool update dotnet-sonarscanner --tool-path ./.sonar/scanner
+
+      - name: Set up .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '8.0.x'  # Specify the version of .NET Core you are using
+
+      - name: Restore dependencies
+        run: dotnet restore Back_End1_Aura.sln  # Adjust if your solution file has a different name
+
+      - name: Build the solution
+        run: dotnet build Back_End1_Aura.sln --no-restore --configuration Release
+
+      - name: Run unit tests and collect coverage
+        run: dotnet test Back_End1_Aura.sln --no-build --configuration Release --collect:"XPlat Code Coverage" /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:CoverletOutput=./TestResults/coverage.opencover.xml
+
       - name: Build and analyze
         env:
           GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        shell: powershell
+        shell: pwsh
         run: |
-          .\.sonar\scanner\dotnet-sonarscanner begin /k:"Aura-TaskManager_Back_End1" /o:"aura-taskmanager" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
-          dotnet clean
-          dotnet build
-          .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
+          ./.sonar/scanner/dotnet-sonarscanner begin /k:"Aura-TaskManager_Back_End1" /o:"aura-taskmanager" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.opencover.reportsPaths=./TestResults/coverage.opencover.xml
+          dotnet build Back_End1_Aura.sln
+          ./.sonar/scanner/dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
