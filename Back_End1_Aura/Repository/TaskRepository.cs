@@ -12,12 +12,7 @@ namespace Back_End1_Aura.Repository
         {
             _context = context;
         }
-
-        public TaskModel GetByName(string name)
-        {
-            return _context.Tasks.SingleOrDefault(task => task.Name == name);
-        }
-
+        
         public IEnumerable<TaskModel> GetAll()
         {
             return _context.Tasks.ToList();

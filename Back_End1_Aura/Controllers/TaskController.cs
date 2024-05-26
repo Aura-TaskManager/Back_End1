@@ -12,9 +12,6 @@ namespace Back_End1_Aura.Controllers
 
         public TaskController(TaskService taskService) => _taskService = taskService;
 
-        [HttpGet("{name}")]
-        public TaskViewModel GetByName(string name) => _taskService.GetByName(name);
-
         [HttpGet ("GetAll")]
         public IEnumerable<TaskViewModel> GetAll() => _taskService.GetAll();
     }
