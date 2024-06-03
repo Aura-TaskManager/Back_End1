@@ -79,5 +79,5 @@ jobs:
           context: ./Back_End1_Aura  # Adjusted context to include the directory
           dockerfile: Dockerfile  # Assuming Dockerfile is in the root of Back_End1_Aura directory
           push: true
-          tags: ${{ steps.meta.outputs.tags }} backend-latest
+          tags: ${{ steps.meta.outputs.tags }}, ranailayda/aura:backend-latest
           labels: ${{ steps.meta.outputs.labels }}
