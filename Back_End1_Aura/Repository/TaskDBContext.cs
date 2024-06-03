@@ -23,7 +23,6 @@ namespace Back_End1_Aura.Data
     }
 }
 
-
 //migration updaten met: dotnet ef database update --project Back_End1_Aura/Back_End1_Aura.csproj
 //migration maken met: dotnet ef migrations add InitialCreate
 //voorbeeld migration updaten: dotnet ef migrations add /nieuwe entity/
