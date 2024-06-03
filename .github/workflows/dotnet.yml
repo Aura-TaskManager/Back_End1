@@ -35,10 +35,19 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
         
-      - name: Test the Docker image
-        run: |
-          cd Back_End1_Aura
-          docker-compose up -d 
+      - name: Set up .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '8.0.x'  # Specify the version of .NET Core you are using
+
+      - name: Restore dependencies
+        run: dotnet restore Back_End1_Aura.sln  # Adjust if your solution file has a different name
+        
+      - name: Build the solution
+        run: dotnet build Back_End1_Aura.sln --no-restore --configuration Release
+        
+      - name: Run unit tests
+        run: dotnet test Back_End1_Aura.sln --no-build --configuration Release --collect:"XPlat Code Coverage"
 
   push_to_registry:
     name: Push Docker image to Docker Hub
