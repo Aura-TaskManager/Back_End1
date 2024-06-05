@@ -7,9 +7,8 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using System.Collections.Generic;
 using System.Linq;
-using Back_End1_Aura.Data;
 
-namespace UnitTest.Task
+namespace Back_End1_Aura.Tests
 {
     [TestClass]
     public class TaskControllerTest
@@ -22,7 +21,9 @@ namespace UnitTest.Task
             mockTaskRepository.Setup(repo => repo.GetAll())
                 .Returns(GetSampleTaskModels());
 
-            var taskService = new TaskService(mockTaskRepository.Object);
+            var mockCategoryRepository = new Mock<ICategoryRepository>(); // Mock the category repository
+
+            var taskService = new TaskService(mockTaskRepository.Object, mockCategoryRepository.Object);
             var controller = new TaskController(taskService);
 
             // Act

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Back_End1_Aura.Models
 {
@@ -9,5 +10,7 @@ namespace Back_End1_Aura.Models
 
         [Required]
         public string Name { get; set; }
+
+        public ICollection<TaskCategoryModel> TaskCategories { get; set; } = new List<TaskCategoryModel>();
     }
 }

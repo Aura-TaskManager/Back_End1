@@ -2,7 +2,6 @@
 using Back_End1_Aura.Repository;
 using System.Collections.Generic;
 using System.Linq;
-using Back_End1_Aura.Data;
 
 namespace Back_End1_Aura.Tests
 {
@@ -18,15 +17,15 @@ namespace Back_End1_Aura.Tests
                 new TaskModel { TaskId = 2, Name = "Task 2" }
             };
         }
-        
+
         public IEnumerable<TaskModel> GetAll()
         {
             return _tasks;
         }
 
-        public TaskModel GetByName(string name)
+        public void Add(TaskModel task)
         {
-            return _tasks.SingleOrDefault(task => task.Name == name);
+            _tasks.Add(task);
         }
     }
 }

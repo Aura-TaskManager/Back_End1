@@ -1,8 +1,16 @@
-﻿namespace Back_End1_Aura.Models;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
-public class CategoryModel
+namespace Back_End1_Aura.Models
 {
-    public int CategoryId { get; set; }
-    public string Name { get; set; }
-    public ICollection<TaskModel> Tasks { get; set; } = new List<TaskModel>();
+    public class CategoryModel
+    {
+        [Key]
+        public int CategoryId { get; set; }
+
+        [Required]
+        public string Name { get; set; }
+
+        public ICollection<TaskCategoryModel> TaskCategories { get; set; } = new List<TaskCategoryModel>();
+    }
 }

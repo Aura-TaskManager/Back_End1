@@ -1,7 +1,11 @@
 ﻿using Back_End1_Aura.Models;
-namespace Back_End1_Aura.Data;
+using System.Collections.Generic;
 
-public interface ITaskRepository
-{ 
-    IEnumerable<TaskModel> GetAll();
+namespace Back_End1_Aura.Repository
+{
+    public interface ITaskRepository
+    {
+        IEnumerable<TaskModel> GetAll();
+        void Add(TaskModel task);
+    }
 }
