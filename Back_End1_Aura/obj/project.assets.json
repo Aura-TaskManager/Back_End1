@@ -4561,11 +4561,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\raozg\\RiderProjects\\Back_End1\\Back_End1_Aura\\Back_End1_Aura.csproj",
+      "projectUniqueName": "C:\\Users\\raozg\\RiderProjects\\Back_End1_Aura\\Back_End1_Aura\\Back_End1_Aura.csproj",
       "projectName": "Back_End1_Aura",
-      "projectPath": "C:\\Users\\raozg\\RiderProjects\\Back_End1\\Back_End1_Aura\\Back_End1_Aura.csproj",
+      "projectPath": "C:\\Users\\raozg\\RiderProjects\\Back_End1_Aura\\Back_End1_Aura\\Back_End1_Aura.csproj",
       "packagesPath": "C:\\Users\\raozg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\raozg\\RiderProjects\\Back_End1\\Back_End1_Aura\\obj\\",
+      "outputPath": "C:\\Users\\raozg\\RiderProjects\\Back_End1_Aura\\Back_End1_Aura\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\raozg\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4642,7 +4642,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

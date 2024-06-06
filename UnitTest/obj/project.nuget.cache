@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jUA92cK3VwHvMNN/1utxtL9RwGdKYwA/uuki0E0dtW40i5LTwoUAkrcmY4eLTz+I09KfK/ZOX3A4NjYHfGFDjg==",
+  "dgSpecHash": "RgkeCrn46bQvtaJDdeeY2DmTT89c+MGJLP7/sx6CAMd5eKkU0ULhouwGk+0BhV3WHlsYVsu+lYnKmRdsV/4soA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\raozg\\RiderProjects\\Back_End1\\UnitTest\\UnitTest.csproj",
+  "projectFilePath": "C:\\Users\\raozg\\RiderProjects\\Back_End1_Aura\\UnitTest\\UnitTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\raozg\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\raozg\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

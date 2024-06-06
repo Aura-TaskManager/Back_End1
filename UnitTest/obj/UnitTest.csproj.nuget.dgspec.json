@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\raozg\\RiderProjects\\Back_End1\\UnitTest\\UnitTest.csproj": {}
+    "C:\\Users\\raozg\\RiderProjects\\Back_End1_Aura\\UnitTest\\UnitTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\raozg\\RiderProjects\\Back_End1\\Back_End1_Aura\\Back_End1_Aura.csproj": {
+    "C:\\Users\\raozg\\RiderProjects\\Back_End1_Aura\\Back_End1_Aura\\Back_End1_Aura.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\raozg\\RiderProjects\\Back_End1\\Back_End1_Aura\\Back_End1_Aura.csproj",
+        "projectUniqueName": "C:\\Users\\raozg\\RiderProjects\\Back_End1_Aura\\Back_End1_Aura\\Back_End1_Aura.csproj",
         "projectName": "Back_End1_Aura",
-        "projectPath": "C:\\Users\\raozg\\RiderProjects\\Back_End1\\Back_End1_Aura\\Back_End1_Aura.csproj",
+        "projectPath": "C:\\Users\\raozg\\RiderProjects\\Back_End1_Aura\\Back_End1_Aura\\Back_End1_Aura.csproj",
         "packagesPath": "C:\\Users\\raozg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\raozg\\RiderProjects\\Back_End1\\Back_End1_Aura\\obj\\",
+        "outputPath": "C:\\Users\\raozg\\RiderProjects\\Back_End1_Aura\\Back_End1_Aura\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\raozg\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -88,18 +88,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\raozg\\RiderProjects\\Back_End1\\UnitTest\\UnitTest.csproj": {
+    "C:\\Users\\raozg\\RiderProjects\\Back_End1_Aura\\UnitTest\\UnitTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\raozg\\RiderProjects\\Back_End1\\UnitTest\\UnitTest.csproj",
+        "projectUniqueName": "C:\\Users\\raozg\\RiderProjects\\Back_End1_Aura\\UnitTest\\UnitTest.csproj",
         "projectName": "UnitTest",
-        "projectPath": "C:\\Users\\raozg\\RiderProjects\\Back_End1\\UnitTest\\UnitTest.csproj",
+        "projectPath": "C:\\Users\\raozg\\RiderProjects\\Back_End1_Aura\\UnitTest\\UnitTest.csproj",
         "packagesPath": "C:\\Users\\raozg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\raozg\\RiderProjects\\Back_End1\\UnitTest\\obj\\",
+        "outputPath": "C:\\Users\\raozg\\RiderProjects\\Back_End1_Aura\\UnitTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\raozg\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -116,8 +116,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\raozg\\RiderProjects\\Back_End1\\Back_End1_Aura\\Back_End1_Aura.csproj": {
-                "projectPath": "C:\\Users\\raozg\\RiderProjects\\Back_End1\\Back_End1_Aura\\Back_End1_Aura.csproj"
+              "C:\\Users\\raozg\\RiderProjects\\Back_End1_Aura\\Back_End1_Aura\\Back_End1_Aura.csproj": {
+                "projectPath": "C:\\Users\\raozg\\RiderProjects\\Back_End1_Aura\\Back_End1_Aura\\Back_End1_Aura.csproj"
               }
             }
           }
@@ -169,7 +169,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
