@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Back_End1_Aura")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9feb02b6da36a183c1bea58d9011973952039bd5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e2e892cac0b78659b9b627abe38dcd2cf0c1eb2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Back_End1_Aura")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Back_End1_Aura")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
